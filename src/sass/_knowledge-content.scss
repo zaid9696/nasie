@@ -1,0 +1,155 @@
+.knowledgeContent{
+
+   
+
+    margin-top: 3rem;
+
+    img {
+    		height: 100%;
+            width: 100%;
+            object-position: 0 0;
+            border-radius: 3px;
+    		box-shadow: 0px 2px 6px 0px #0000006b;
+
+       	}
+
+    h3.title{
+    	font-size: 4.7rem;
+	    background: #111948;
+	    color: #fff;
+	    width: fit-content;
+	    padding: 0 44px;
+    	border-radius: 2px;
+    	margin-bottom: 1.5rem;
+
+    }
+
+
+    &__articles {
+
+    	display: grid;
+    	grid-template-areas:
+        "head head"
+        "item1 item2";
+     	gap: 2rem;
+
+
+    @media screen and (max-width: 690px) {
+
+        grid-template-areas: unset;
+
+        grid-template-columns: 1fr;
+        gap: 8rem;
+
+     }
+
+    }
+
+    &__header {
+
+
+		a {
+			color: $third-color;
+			text-decoration: none;
+			&:hover {
+
+				text-decoration: underline;
+				text-decoration-color: $secondary-color;
+
+			}
+
+		}
+
+		&-item {
+		height: 100%;
+		position: relative;
+
+		}
+    	&:nth-child(1) {
+
+    		grid-area: head;
+              @media screen and (max-width: 690px) {
+
+                grid-area: unset; 
+
+             }
+    		height: 290px;
+    		margin-bottom: 7rem;
+    		h3 {
+    			text-align: center;
+			    font-size: 2.5rem;
+			    border-bottom: 1.5px solid #eeee;
+			    padding-bottom: 7px;
+			    padding-top: 7px;
+    			margin-top: 4px;
+
+    			a {
+    				color: $third-color;
+    				text-decoration: none;
+    				&:hover {
+
+    					text-decoration: underline;
+    					text-decoration-color: $secondary-color;
+
+    				}
+
+    			}
+    		}
+    	}
+
+    	&:nth-child(2), &:nth-child(3) {
+			h3{
+    		position: absolute;
+		    top: 45%;
+		    text-align: center;
+		    font-size: 2.1rem;
+		    background: #0000008f;
+		    width: fit-content;
+		    padding: 9px;
+		    border-radius: 3px;
+
+		    a{color:#fff}
+
+			}
+		}
+    
+
+    	&:nth-child(2) {
+
+    		grid-area: item1;
+              @media screen and (max-width: 690px) {
+
+                grid-area: unset; 
+
+             }
+    	}
+    	&:nth-child(3) {
+
+    		grid-area: item2;
+              @media screen and (max-width: 690px) {
+
+                grid-area: unset; 
+
+             }
+    	}
+    }
+
+    .more {
+
+	    display: flex;
+	    justify-content: center;
+	    margin: 1rem 0;
+	    a {
+    		font-size: 3rem;
+    		color: $third-color;
+    		text-decoration: none;
+    		border-bottom: 1px solid $secondary-color;
+
+
+	    }
+    }
+
+    
+
+}
+

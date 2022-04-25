@@ -1,0 +1,33 @@
+.footer{
+
+
+    grid-column: full-start / full-end;
+    margin-top: 3rem;
+    background-color: $footer-color;
+
+    .copy-right {
+
+    	color: #c7c5c5;
+	    text-align: center;
+	    margin-bottom: 10px;
+	    border-top: 1px solid #4c4c4c;
+	    padding-top: 10px;
+	    font-size: 1.5rem;
+	    font-weight: 100;
+	    transition: all 0.5s ease-in-out;
+	    &:hover {color: #fff}
+    }
+
+    &__social-icons {
+
+
+    	display: grid;
+	    justify-content: center;
+	    grid-template-columns: repeat(4, 70px);
+	    margin: 2rem 0;
+	    margin-top: 2.8rem;
+
+    }
+   
+
+}
